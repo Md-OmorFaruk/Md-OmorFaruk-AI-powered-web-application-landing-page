@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font: Plus Jakarta Sans  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font: Manrope  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font: Questrial  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font: Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#E4E0E7]">
+    <!-- Header:Navbar Section -->
+
+    <header class="main-header bg-gradient-top-left pb-16">
+      <div class="navbar wrapper">
+        <!-- Mobile: Logo on the left -->
+        <div class="navbar-start lg:navbar-start --font-navbar">
+          <a class="btn btn-ghost text-xl font-navbar">
+            <img src="/assets/logo.png" class="w-40 md:w-64" alt="logo" />
+          </a>
+        </div>
+
+        <!-- Mobile: Hamburger on the right -->
+        <div class="navbar-end flex lg:hidden">
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content right-0 bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow font-navbar text-sm font-semibold text-[#020407]"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pricing</a></li>
+              <li><a>Consulting</a></li>
+              <li><a>Ai Coach</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Desktop: Menu in center -->
+        <div class="navbar-center hidden lg:flex">
+          <ul
+            class="menu menu-horizontal px-1 font-navbar text-sm font-semibold text-[#020407]"
+          >
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>About</a></li>
+            <li><a>Pricing</a></li>
+            <li><a>Consulting</a></li>
+            <li><a>Ai Coach</a></li>
+          </ul>
+        </div>
+
+        <!-- Desktop: Button on right -->
+        <div class="hidden lg:flex lg:navbar-end">
+          <a
+            class="btn bg-transparent b-1 round-xl --font-body rounded-3xl border-black px-[16px] py-[13px] text-base font-bold text-[#010205]"
+          >
+            Get started
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero section -->
+      <div class="hero min-h-screen pt-14 wrapper">
+        <div class="hero-content flex-col gap-30 lg:gap-60 lg:flex-row-reverse">
+          <div class="relative">
+            <div>
+              <img src="/assets/MainHero.png" class="max-w-sm rounded-xl" />
+            </div>
+            <div
+              class="bg-white rounded-3xl min-h-44 shadow-xl p-8 absolute top-56 md:right-40"
+            >
+              <div class="flex justify-between gap-28">
+                <h4 class="text-[#00245F] font-semibold text-4xl mb-2">721+</h4>
+                <h4 class="text-[#00245F] font-semibold text-4xl mb-2">
+                  1000+
+                </h4>
+              </div>
+              <h5 class="mt-3 mb-5 text-2xl font-semibold text-[#05131D]">
+                Growth is our priority.
+              </h5>
+
+              <p class="font-medium text-[#05131DB2] text-base">
+                As a full-service business agency, we specialize in helping
+                companies of all sizes optimize their operations
+              </p>
+            </div>
+          </div>
+          <div class="">
+            <h1
+              class="max-w-[446px] tracking-tight --font-heading text-5xl lg:text-[80px] font-medium text-center lg:text-start"
+            >
+              Your AI-Powered Sales Coach
+            </h1>
+            <div class="flex gap-10 items-center mt-5">
+              <div class="bg-white p-3 rounded-lg">
+                <img src="/assets/robo.png" class="bg-cover w-52" alt="" />
+              </div>
+              <div>
+                <p class="lg:text-xl font-semibold text-[#05131DB2]">
+                  Get real-time coaching, script suggestions, and deal-closing
+                  strategies powered by advanced AI technology.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row gap-10 items-center mt-10 --font-body"
+            >
+              <div class="flex gap-5">
+                <div class="bg-white p-3 shadow-2xl rounded-xl">
+                  <img src="/assets/backup_table.png" alt="" />
+                </div>
+                <div>
+                  <h4 class="text-[#05131D] font-semibold text-4xl mb-2">
+                    2000+
+                  </h4>
+                  <p class="font-medium text-xl text-[#05131DB2]">
+                    Your protection
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-5">
+                <div class="bg-white p-3 shadow-2xl rounded-xl">
+                  <img src="/assets/atr.png" alt="" />
+                </div>
+                <div>
+                  <h4 class="text-[#05131D] font-semibold text-4xl mb-2">
+                    7001+
+                  </h4>
+                  <p class="font-medium text-xl text-[#05131DB2]">
+                    Provide tailored
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Section -->
+    <main>
+      <!-- Functional Section -->
+      <section class="bg-gradient-to-r from-[#103570] to-[#004FCE] py-20">
+        <div class="wrapper">
+          <div class="p-3 lg:pb-10">
+            <h3
+              class="--font-heading font-normal text-xl lg:text-2xl text-[#FCE38A]"
+            >
+              Live Ai Coach
+            </h3>
+            <h2
+              class="--font-heading font-normal text-3xl lg:text-6xl text-white"
+            >
+              Take a Suggestion Coaching
+            </h2>
+          </div>
+          <div class="flex flex-col lg:flex-row items-center md:gap-4 w-full">
+            <div class="lg:w-1/2 p-10 md:px-32 lg:p-0">
+              <section class="flex items-center justify-center w-full">
+                <div
+                  class="w-full max-w-2xl rounded-lg shadow-lg bg-white flex flex-col overflow-hidden"
+                >
+                  <!-- Header -->
+                  <div class="md:px-6 md:py-4 p-3">
+                    <h2 class="text-lg font-semibold">AI Sales Coach</h2>
+                  </div>
+
+                  <!-- Chat area -->
+                  <div class="flex-1 bg-gray-50 p-6 mb-28">
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-5 h-5 lg:w-8 lg:h-8 bg-gray-300 rounded-full"
+                      ></div>
+                      <div
+                        class="bg-white p-4 rounded-lg shadow text-gray-800 max-w-md"
+                      >
+                        Hello! I'm your AI sales coach. How can I help you
+                        improve your sales performance today?
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Options -->
+                  <div class="bg-white p-4 flex flex-wrap gap-2">
+                    <button
+                      class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm"
+                    >
+                      How do I handle objections?
+                    </button>
+                    <button
+                      class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm"
+                    >
+                      Give me a cold email template
+                    </button>
+                    <button
+                      class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm"
+                    >
+                      Closing techniques
+                    </button>
+                    <button
+                      class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm"
+                    >
+                      Negotiation tips
+                    </button>
+                  </div>
+
+                  <!-- Input -->
+                  <div class="flex items-center gap-2 p-4">
+                    <input
+                      type="text"
+                      placeholder="Ask anything you need"
+                      class="flex-1 px-4 py-2 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                    <button
+                      class="bg-blue-900 text-white px-4 py-2 rounded-md flex items-center gap-3"
+                    >
+                      Send
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                      >
+                        <path
+                          fill="white"
+                          d="m3.293 11.293 1.414 1.414L11 6.414V20h2V6.414l6.293 6.293 1.414-1.414L12 2.586l-8.707 8.707z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div>
+              <div
+                class="bg-white rounded-full shadow-md p-2 flex flex-row lg:flex-col items-center lg:space-y-4"
+              >
+                <!-- Refresh -->
+                <button class="p-2 hover:bg-gray-100 rounded-full">
+                  <img src="/assets/refresh-ccw.png" alt="" />
+                </button>
+                <!-- Like -->
+                <button class="p-2 hover:bg-gray-100 rounded-full">
+                  <img src="/assets/thumbs-up.png" alt="" />
+                </button>
+                <!-- Dislike -->
+                <button class="p-2 hover:bg-gray-100 rounded-full">
+                  <img src="/assets/thumbs-down.png" alt="" />
+                </button>
+                <!-- Copy -->
+                <button class="p-2 hover:bg-gray-100 rounded-full">
+                  <img src="/assets/clipboard.png" alt="" />
+                </button>
+                <!-- Sound -->
+                <button class="p-2 hover:bg-gray-100 rounded-full">
+                  <img src="/assets/clipboard.png" alt="" />
+                </button>
+              </div>
+            </div>
+            <div>
+              <div class="p-4">
+                <!-- Real-time Analysis Section -->
+                <div class="bg-gray-100 rounded-xl p-4 mb-4 md:w-[530px]">
+                  <h2 class="text-xl font-semibold text-gray-800 mb-4">
+                    Real-time Analysis
+                  </h2>
+
+                  <!-- Confidence Level with Progress -->
+                  <div class="bg-white rounded-lg p-4 mb-4 shadow-sm">
+                    <div class="flex items-center mb-2">
+                      <span class="text-green-600 mr-2">✔️</span>
+                      <span class="font-medium text-gray-800"
+                        >Confidence Level</span
+                      >
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                      <div
+                        class="bg-green-500 h-2.5 rounded-full"
+                        style="width: 60%"
+                      ></div>
+                    </div>
+                    <div class="text-right text-sm text-gray-600 mt-1">60%</div>
+                  </div>
+
+                  <!-- Improvement Card -->
+                  <div class="bg-white rounded-lg p-4 shadow-sm">
+                    <div class="flex items-center mb-1">
+                      <span class="text-blue-600 mr-2">📈</span>
+                      <span class="font-medium text-gray-800"
+                        >Confidence Level</span
+                      >
+                    </div>
+                    <p class="text-sm text-gray-500">
+                      85% improvement in objection handling
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Quick Actions Section -->
+                <div class="bg-gray-100 rounded-xl p-4">
+                  <h2 class="text-xl font-semibold text-gray-800 mb-4">
+                    Quick Actions
+                  </h2>
+                  <div class="grid grid-cols-2 gap-4">
+                    <!-- Generate Script -->
+                    <button
+                      class="bg-white flex flex-col items-start gap-2 p-4 rounded-lg shadow hover:bg-gray-50 transition"
+                    >
+                      <span class="text-blue-800 text-xl">📝</span>
+                      <span class="font-medium text-blue-900 text-sm"
+                        >Generate Script</span
+                      >
+                    </button>
+
+                    <!-- Practice Pitch -->
+                    <button
+                      class="bg-white flex flex-col items-start gap-2 p-4 rounded-lg shadow hover:bg-gray-50 transition"
+                    >
+                      <span class="text-blue-800 text-xl">💬</span>
+                      <span class="font-medium text-blue-900 text-sm"
+                        >Practice Pitch</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Card:Course Section -->
+      <div class="wrapper pt-20 pb-28">
+        <h2 class="tex-[#262626] --font-body font-semibold text-5xl p-3 lg:p-0">
+          Our Courses
+        </h2>
+        <div
+          class="flex flex-col lg:flex-row lg:items-center items-start p-3 lg:p-0 justify-between"
+        >
+          <p class="text-[#59595A] font-normal text-lg my-4">
+            Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget
+            elit id imperdiet et. Cras eu sit dignissim lorem nibh et. <br />
+            Ac cum eget habitasse in velit fringilla feugiat senectus in.
+          </p>
+          <button
+            class="bg-[#002868] text-white --font-body py-3 px-5 rounded-md"
+          >
+            View All
+          </button>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between gap-20">
+          <div class="card bg-[#F1F1F3] w-full shadow-sm p-4">
+            <figure class="px-5 pt-5">
+              <img
+                src="/assets/card1.png"
+                alt="Shoes"
+                class="h-[360px] object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <div class="flex justify-between items-center">
+                <div>
+                  <button
+                    class="bg-white p-3 rounded-sm text-[#4C4C4D] font-medium text-lg --font-body"
+                  >
+                    4 Weeks
+                  </button>
+                  <button
+                    class="bg-white p-3 rounded-sm text-[#4C4C4D] font-medium text-lg --font-body"
+                  >
+                    Beginner
+                  </button>
+                </div>
+                <div>
+                  <p class="text-[#262626] text-xl font-medium --font-body">
+                    By John Smith
+                  </p>
+                </div>
+              </div>
+              <h2
+                class="card-title font-semibold text-[#262626] text-xl --font-body mt-3"
+              >
+                Web Design Fundamentals
+              </h2>
+              <p class="text-[#4C4C4D] text-lg --font-body my-3">
+                Learn the fundamentals of web design, including HTML, CSS, and
+                responsive design principles. Develop the skills to create
+                visually appealing and user-friendly websites.
+              </p>
+              <div class="card-actions w-full">
+                <button class="btn btn-primary w-full bg-[#002868]">
+                  Get it Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#F1F1F3] w-full shadow-sm p-4">
+            <figure class="px-5 pt-5">
+              <img
+                src="/assets/card2.png"
+                alt="Shoes"
+                class="h-[360px] object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <div class="flex justify-between items-center">
+                <div>
+                  <button
+                    class="bg-white p-3 rounded-sm text-[#4C4C4D] font-medium text-lg --font-body"
+                  >
+                    4 Weeks
+                  </button>
+                  <button
+                    class="bg-white p-3 rounded-sm text-[#4C4C4D] font-medium text-lg --font-body"
+                  >
+                    Beginner
+                  </button>
+                </div>
+                <div>
+                  <p class="text-[#262626] text-xl font-medium --font-body">
+                    By John Smith
+                  </p>
+                </div>
+              </div>
+              <h2
+                class="card-title font-semibold text-[#262626] text-xl --font-body mt-3"
+              >
+                Web Design Fundamentals
+              </h2>
+              <p class="text-[#4C4C4D] text-lg --font-body my-3">
+                Learn the fundamentals of web design, including HTML, CSS, and
+                responsive design principles. Develop the skills to create
+                visually appealing and user-friendly websites.
+              </p>
+              <div class="card-actions w-full">
+                <button class="btn btn-primary w-full bg-[#002868]">
+                  Get it Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Faq -->
+      <section class="wrapper pb-24 px-3 lg:px-0">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-60 mt-20 mb-10">
+          <p class="--fond-heading font-normal text-[#001C4A] text-lg">
+            Frequently asked questions
+          </p>
+          <h2 class="--font-heading font-normal text-[#001C4A] text-4xl">
+            Constant collaboration is how we roll. Let's see if we are a good
+            fit.
+          </h2>
+        </div>
+        <div class="flex gap-7 justify-center items-center">
+          <div>
+            <h2 class="font-normal text-xl lg:text-3xl text-[#8B7D4C]">01</h2>
+          </div>
+          <div class="collapse collapse-plus border-y-2 border-base-300">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div
+              class="collapse-title font-medium --font-heading text-xl lg:text-4xl"
+            >
+              Why should I choose Humestic?
+            </div>
+            <div
+              class="collapse-content text-base font-light text-[#636363] --font-faq-ans"
+            >
+              Bottleneck mice my capacity is full, nor incentivization we need
+              to start advertising on social media, or helicopter view, for what
+              the. Let's put a pin in that we need to build it so that it
+              scales, are there any leftovers in the kitchen?, if you're not
+              hurting you're not winning loop back
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-7 justify-center items-center">
+          <div>
+            <h2 class="font-normal text-xl lg:text-3xl text-[#8B7D4C]">02</h2>
+          </div>
+          <div class="collapse collapse-plus border-y-2 border-base-300">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div
+              class="collapse-title font-medium --font-heading text-xl lg:text-4xl"
+            >
+              I like your works, how do we start a project?
+            </div>
+            <div
+              class="collapse-content text-base font-light text-[#636363] --font-faq-ans"
+            >
+              Bottleneck mice my capacity is full, nor incentivization we need
+              to start advertising on social media, or helicopter view, for what
+              the. Let's put a pin in that we need to build it so that it
+              scales, are there any leftovers in the kitchen?, if you're not
+              hurting you're not winning loop back
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-7 justify-center items-center">
+          <div>
+            <h2 class="font-normal text-xl lg:text-3xl text-[#8B7D4C]">03</h2>
+          </div>
+          <div class="collapse collapse-plus border-y-2 border-base-300">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div
+              class="collapse-title font-medium --font-heading text-xl lg:text-4xl"
+            >
+              What info is required to get a quotation?
+            </div>
+            <div
+              class="collapse-content text-base font-light text-[#636363] --font-faq-ans"
+            >
+              Bottleneck mice my capacity is full, nor incentivization we need
+              to start advertising on social media, or helicopter view, for what
+              the. Let's put a pin in that we need to build it so that it
+              scales, are there any leftovers in the kitchen?, if you're not
+              hurting you're not winning loop back
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial Section -->
+
+      <!-- Testimonial Container -->
+      <section class="wrapper mx-auto p-10 lg:p-20 relative">
+        <!-- Testimonial Quote -->
+        <p
+          id="quote"
+          class="text-2xl lg:text-4xl text-[#010205] font-medium --font-body mb-6"
+        >
+          "This app transformed our workflow! Amazing support."
+        </p>
+
+        <!-- Avatar, Name, Role, and Navigation Arrows -->
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+          <!-- Avatar, Name, and Role -->
+          <div class="flex items-center space-x-4 mb-7 lg:mb-0">
+            <img
+              id="avatar"
+              class="w-12 h-12 rounded-full"
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Avatar"
+            />
+            <div>
+              <p id="name" class="text-[#010205] text-xl font-bold">
+                Elena Foster
+              </p>
+              <p id="role" class="text-[#878C91] font-medium text-base">
+                CEO, BrightStart
+              </p>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows and Counter -->
+          <div class="flex items-center space-x-3">
+            <button
+              id="prev"
+              class="w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center text-xl"
+            >
+              &larr;
+            </button>
+            <span
+              id="counter"
+              class="text-[#00245F] font-medium min-w-[40px] text-center"
+              >1/3</span
+            >
+            <button
+              id="next"
+              class="w-10 h-10 text-white rounded-full bg-[#00245F] hover:bg-gray-300 flex items-center justify-center text-xl"
+            >
+              &rarr;
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer
+      class="pt-20 --font-body relative bg-cover bg-center"
+      style="background-image: url('/assets/bg-footer.png')"
+    >
+      <div class="absolute inset-0 rbg-gradient-footer"></div>
+      <div
+        class="wrapper bg-gradient-to-r from-[#103570] to-[#004FCE] text-center py-20 rounded-xl min-h-80 relative z-10"
+      >
+        <h1 class="text-white font-semibold text-4xl">
+          Ready to Hire Smarter?
+        </h1>
+        <p class="text-[#B9BDC7] mt-4 mb-8 font-normal text-base">
+          Unlock Exclusive Insights Subscribe to Our Newsletter
+        </p>
+        <button
+          class="bg-[#FCE38A] text-[#00245F] font-medium text-base rounded-full py-4 px-9"
+        >
+          Join Now
+        </button>
+      </div>
+
+      <div
+        class="wrapper footer sm:footer-horizontal text-base-content py-20 relative z-10 text-center lg:text-start"
+      >
+        <aside>
+          <img
+            src="/assets/footerlogo.png"
+            alt=""
+            class="max-w-fit mx-auto lg:mx-0"
+          />
+          <p
+            class="lg:max-w-[530px] text-[#335386] font-normal text-sm --font-body"
+          >
+            SalesRank.AI offers a comprehensive suite of AI-powered solutions to
+            help you find expert sales professionals who can elevate every
+            aspect of your business. From performance rankings and skill
+            verification to industry benchmarking and real-time analytics, we
+            provide the insights and tools to optimize your sales strategy and
+            drive growth.
+          </p>
+          <div class="flex gap-2 pt-5 max-w-fit mx-auto lg:mx-0">
+            <img src="/assets/fb.svg" alt="" /><img
+              src="/assets/tweet.svg"
+              alt=""
+            /><img src="/assets/link.svg" alt="" /><img
+              src="/assets/ins.svg"
+              alt=""
+            />
+          </div>
+        </aside>
+        <nav class="space-y-7">
+          <a
+            ><h6 class="text-[#001C4A] font-semibold text-xl">Navigation</h6></a
+          >
+          <a class="link link-hover font-normal text-base text-[#335386]"
+            >Service</a
+          >
+          <a class="link link-hover font-normal text-base text-[#335386]"
+            >Agency</a
+          >
+          <a class="link link-hover font-normal text-base text-[#335386]"
+            >Case Study</a
+          >
+          <a class="link link-hover font-normal text-base text-[#335386]"
+            >Resource</a
+          >
+          <a class="link link-hover font-normal text-base text-[#335386]"
+            >Contact</a
+          >
+        </nav>
+        <nav class="space-y-5 items-center">
+          <a><h6 class="text-[#001C4A] font-semibold text-xl">Licence</h6></a>
+          <a class="link link-hover font-normal text-base text-[#335386]"
+            >Privacy Policy</a
+          >
+          <a class="link link-hover font-normal text-base text-[#335386]">
+            Copyright
+          </a>
+          <a class="link link-hover font-normal text-base text-[#335386]">
+            Email Address</a
+          >
+        </nav>
+        <nav class="space-y-7">
+          <a><h6 class="text-[#001C4A] font-semibold text-xl">Contact</h6></a>
+          <div class="flex gap-2">
+            <img src="/assets/call.png" alt="" class="w-6 h-5 object-contain" />
+            <a class="link link-hover font-normal text-base text-[#335386]"
+              >(406) 555-0120</a
+            >
+          </div>
+          <div class="flex gap-2 w">
+            <img src="/assets/mail.png" alt="" class="w-6 h-5 object-fill" />
+            <a class="link link-hover font-normal text-base text-[#335386]"
+              >Hey@boostim.com</a
+            >
+          </div>
+          <div class="flex justify-start gap-2">
+            <img
+              src="/assets/location.png"
+              alt=""
+              class="w-6 h-5 object-contain"
+            />
+            <a class="link link-hover font-normal text-base text-[#335386]"
+              >2972 Westheimer Rd. Santa Ana,<br />
+              Illinois 85486
+            </a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
