@@ -5,7 +5,6 @@ A modern, responsive landing page built using **HTML**, **Tailwind CSS**, **Java
 ## 🔗 Live Site
 
 👉 [View Live Demo](https://ai-powered-landing-page.netlify.app/)  
-*(Replace this with your actual Netlify URL)*
 
 ## 🛠 Technologies Used
 
